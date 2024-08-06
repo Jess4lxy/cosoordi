@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sistema de Librería</h1>
+  
+  <h2>Autores</h2>
+  <ul id="author-list"></ul>
+  <h3>Añadir Autores</h3>
+  <form id="add-author-form">
+    <input type="text" id="author-firstname" placeholder="Primer Nombre" required>
+    <input type="text" id="author-lastname" placeholder="Apellido" required>
+    <input type="date" id="author-birthdate" required>
+    <button type="submit">Añadir Autor</button>
+  </form>
+  <h3>Actualizar Autores</h3>
+  <form id="upd-author-form">
+    <input type="text" id="upd-id" placeholder="ID del autor a actualizar" required>
+    <input type="text" id="upd-author-firstname" placeholder="Primer Nombre" required>
+    <input type="text" id="upd-author-lastname" placeholder="Apellido" required>
+    <input type="date" id="upd-author-birthdate" required>
+    <button type="submit">Actualizar Autor</button>
+  </form>
+  
+  <h2>Libros</h2>
+  <ul id="book-list"></ul>
+  <h3>Añadir Libros</h3>
+  <form id="add-book-form">
+    <input type="text" id="book-title" placeholder="Título" required>
+    <input type="date" id="book-pubdate" required>
+    <input type="number" id="book-author-id" placeholder="ID del Autor" required>
+    <input type="number" id="book-price" placeholder="Precio" step="0.01" required>
+    <button type="submit">Añadir Libro</button>
+  </form>
+  <h3>Actualizar Libros</h3>
+  <form id="upd-book-form">
+    <input type="text" id="upd-book-id" placeholder="ID del libro a actualizar" required>
+    <input type="text" id="upd-book-title" placeholder="Título" required>
+    <input type="date" id="upd-book-pubdate" required>
+    <input type="number" id="upd-book-author-id" placeholder="ID del Autor" required>
+    <input type="number" id="upd-book-price" placeholder="Precio" step="0.01" required>
+    <button type="submit">Actualizar Libro</button>
+  </form>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
